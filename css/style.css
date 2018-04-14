@@ -134,3 +134,7 @@ img {
 .cursor-disabled {
     cursor: not-allowed;
 }
+
+:focus {
+    outline: 0;
+}
