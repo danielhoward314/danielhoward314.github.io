@@ -3,9 +3,11 @@
   <head>
     <title>Guessing Game</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Sunflower:300" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='js/guessingGame.js'></script>
+    <script src='js/layout.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
@@ -46,20 +48,18 @@
     </div>
 
     <div id='footer' class='center'>
-      <div class='row'>
-        <div id='fullstack' class='col-sm-4'>
+      <div class='clearfix'>
+        <div id='fullstack' class='col-xs-4'>
           <img src='assets/fa-logo@2x.png'></img>
         </div>
 
-        <div id='signature' class='col-sm-4'>
-          <h4>Project by Daniel Howard</h4>
+        <div id='signature' class='col-xs-4'>
+          <h4>Project by <span id='signed-name'>Daniel Howard</span></h4>
         </div>
 
-        <div id='grace-hopper' class='col-sm-4'>
+        <div id='grace-hopper' class='col-xs-4'>
           <img src='assets/grace_hopper_academy.png'></img>
         </div>
-
-
       </div>
     </div>
 

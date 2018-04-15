@@ -1,13 +1,14 @@
 html {
-    box-sizing: 'border-box';
+    box-sizing: border-box;
     font-size: 10px;
-    height: 100%
+    position: relative;
+    /* height: 100%; */
   }
 
 body {
     position: relative;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 html:before {
@@ -30,7 +31,11 @@ html:before {
 
 #app {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
+}
+
+#title, #subtitle {
+    font-family: 'Sunflower', sans-serif;
 }
 
 #subtitle {
@@ -106,17 +111,18 @@ ul {
     width: 100%;
     border-top: solid 2px black;
     background-color: white;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
 } 
 
 img {
     display: inline-block;
-    width: 300px;
+    /* width: 300px; */
+    max-width: 75%;
 }
 
 #grace-hopper {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 #fullstack {
@@ -125,6 +131,11 @@ img {
 
 #signature {
     padding-top: 5px;
+}
+
+#signed-name {
+    font-family: 'Italianno', cursive;
+    font-size: 2.5rem;
 }
 
 .three-d {
@@ -142,3 +153,28 @@ img {
 @-ms-viewport{
     width: device-width;
   }
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    html {
+        font-size: 8px;
+    }
+    #app {
+        position: relative;
+    }
+    
+    #signature > h4 {
+        font-size: 1rem;
+    }
+
+    #signed-name {
+        font-size: 1.5rem;
+    }
+
+    #grace-hopper {
+        padding-top: 8px;
+    }
+
+    .guess{
+        width: 50px;
+    }
+}
